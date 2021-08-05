@@ -186,7 +186,7 @@ h2 {
 
 .container .row .navbar{
   background-color: white;
-  padding-top: 50px;
+  padding-bottom: 350px;
   margin-top: -18px;
   position: absolute;
   width: 78px;top:auto;
@@ -196,14 +196,15 @@ h2 {
 
 .row .col-md-7{
   padding-left: 60px;
+  padding-right: 86px;
 } 
 
-/* .row .col-md-4{
-  margin-left: -30px;
-}  */
+.row .col-md-4{
+  margin-left: -70px;
+}
 
 .btn-group{
-  padding-left: 120px;
+  padding-left: 150px;
 }
 
 #personal{
@@ -213,14 +214,17 @@ h2 {
   font-size:12px; ;
 }
 
+.first{
+  margin-top: 6px;
+}
 
 #personal:after {
   content: "";
   display: block;
-  width:450px;
+  width: 386px;
   height: 0.1px;
   background: rgb(230, 230, 230);
-  right: 22px;
+  right: 88px;
   position: absolute;
   top: 45px;
 }
@@ -231,18 +235,34 @@ a{
 #task:after {
   content: "";
   display: block;
-  width:340px;
+  width:270px;
   height: 0.1px;
   background: rgb(230, 230, 230);
-  right: 195px;
+  right: 265px;
   position: absolute;
   top: 78px;
 }
 #list{
   float: right;
+  margin-right: -5px;
 }
 a {
   color: inherit;
+}
+
+#list #important{
+  border-radius: 12px;
+  width: 70px;
+}
+
+#show,#ptasks{
+  color: blue;
+}
+
+#user{
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
 }
 
 .img {
@@ -283,10 +303,174 @@ p .btn{
 .card .stasks{
   font-size: 10px;
   padding-left: 25px;
+  margin-top: -10px;
 }
 
 .card .img{
   float: none;
   padding-left: 25px;
   padding-right: 25px;
+}
+
+.progress{
+  width: 50px;
+  height: 4px;
+  margin-top: 15px;
+}
+
+#sprogress{
+  width: 50px;
+  height: 4px;
+  margin-top: 15px;
+  margin-inline-start: 140px;
+}
+#sprogress1{
+  width: 50px;
+  height: 4px;
+  margin-top: 15px;
+  margin-inline-start: -8px;
+}
+
+.card{
+  border-radius: 8px;
+}
+
+#card1{
+  margin-top: -12px;
+}
+.card .row {
+  margin-top: -45px;
+  padding-left: 30px;
+  font-size: 9px;
+}
+
+.card .row #col{
+  padding: 8px;
+}
+.card .row #alarm{
+  margin-top: 4px;
+  padding: 8px;
+}
+
+#complete{
+  margin-top: 4px;
+  padding: 8px;
+  font-weight: lighter;
+}
+#comments{
+  margin-top: 4px;
+  padding: 8px;
+  margin-inline-end: -32px;
+}
+.card .row .btn{
+  margin-inline-start: 105px;
+  margin-inline-end: 15px;
+  height: 20px;
+  width: 80px;
+  font-size: 9px;
+  margin-top: 7px;
+}
+
+#btn2{
+  background-color: rgb(255, 243, 245);
+  width: 29px;
+  color: purple;
+  border-color: rgb(255, 243, 245);
+  margin-inline-start: -13px;
+}
+#style{
+  background-color: rgb(255, 243, 245);
+  color: purple;
+  border-color: rgb(255, 243, 245);
+  width: 75px;
+  margin-inline-start: 55px;
+}
+
+#sepbtn{
+  font-size: 12px;
+  background: #FFFFFF;
+  color: #242627;
+  height: 43px;
+  font-weight: bold;
+}
+
+.milestone{
+  margin: 20px;
+  margin-bottom: -10px;
+}
+.milestone1{
+  margin: 20px;
+  margin-bottom: 20px;
+}
+#text{
+  font-size: 13px;
+  margin-top: -42px;
+  margin-inline-start: 40px;
+}
+#month{
+  margin-left: -5px;
+  font-size: 9px;
+}
+#date{
+  margin-left: -5px;
+  margin-top: -15px;
+  font-size: 14px;
+}
+#text1{
+  font-weight: lighter;
+  font-size: 10px;
+  margin-top: -13px;
+  margin-inline-start: 40px;
+}
+#mprogress{
+  width: 60px;
+}
+
+#percent{
+  font-size: 10px;
+  margin-top: -18px;
+  margin-inline-start: 60px;
+  font-weight: 500;
+}
+
+#meetings{
+  margin: 20px;
+  font-weight: bold;
+}
+
+#cdate{
+  font-weight: lighter;
+  color: rgb(49, 49, 49);
+  font-size: 9px;
+}
+
+#weeks{
+  font-weight: lighter;
+  text-align: center;
+  font-size: 10px;
+}
+
+#dates{
+  margin-top: -10px;
+  text-align: center;
+  font-size: 13px;
+}
+#meet1{
+  font-weight: normal;
+  font-size: 13px;
+  margin-inline-start: -22px;
+  list-style: none;
+}
+
+#mbtn{
+  width: 42px;
+  height: 20px;
+  font-size: 9px;
+  float: right;
+  margin-top: -35px;
+}
+
+#google{
+  font-size: 9px;
+  font-weight: lighter;
 }
