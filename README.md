@@ -22,3 +22,16 @@ About Task List. To be updated soon.
  - `python3 manage.py migrate` - creates the database migrations.
  - `python3 manage.py createsuperuser` - creates a super user by which we could access the admin portal.
  - `python3 manage.py runserver` - will start the server.
+
+### Available Features:
+- User registration
+- Login 
+- Update password
+- List tasks
+- Filter tasks
+- Reset filters
+- Add task
+- Edit task
+- Update task
+- Read task in detail
+- Delete task
