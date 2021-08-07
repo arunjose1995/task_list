@@ -35,3 +35,28 @@ About Task List. To be updated soon.
 - Update task
 - Read task in detail
 - Delete task
+
+### Sample screenshots
+
+![Sign IN](static/images/screen-shots/sign-in.png "Sign In")
+
+
+![Sign UP](static/images/screen-shots/sign-up.png "Sign Up")
+
+
+![Forgot Password](static/images/screen-shots/forgot-password.png "Forgot Password")
+
+
+![Task List](static/images/screen-shots/task-list-view.png "Task List")
+
+
+![Filtered Task List](static/images/screen-shots/filtered-task-view.png "Filtered Task View")
+
+
+![Add Task View](static/images/screen-shots/add-task-view.png "Add Task View")
+
+
+![Edit Task View](static/images/screen-shots/edit-task-view.png "Edit Task View")
+
+
+![Read More View](static/images/screen-shots/read-more-view.png "Read More View")
