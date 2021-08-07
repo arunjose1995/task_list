@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block content %}
-    <div class="content my-4">
+    <div class="content py-10">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -15,11 +15,8 @@
                 <div class="col-md-6 contents">
                     <div class="row justify-content-center">
                         <div class="col-md-8">
-                            <div class="mb-4">
+                            <div class="mb-4 mt-4">
                                 <h3>Sign In</h3>
-                                <p class="mb-4">
-                                    Lorem ipsum dolor sit amet elit. Sapiente sit aut eos consectetur adipisicing.
-                                </p>
                             </div>
                             <form action="{% url 'Login-User' %}" method="post">
                                 {% csrf_token %}
@@ -39,7 +36,7 @@
                                         <input type="checkbox" checked="checked"/>
                                         <div class="control__indicator"></div>
                                     </label>
-                                    <span class="ml-auto"><a href="{% url 'Reset-Password' %}" class="forgot-pass">Forgot Password</a></span>
+                                    <span class="ml-auto"><a href="{% url 'Reset-Password' %}" class="forgot-pass primary-color">Forgot Password</a></span>
                                 </div>
 
                                 <input type="submit" value="Sign In" class="btn btn-block btn-primary">
@@ -51,7 +48,7 @@
                                         <span class="caption">Don't have an account &nbsp;</span>
                                     </label>
                                     <span>
-                                        <a href="{% url 'Register' %}">Sign Up</a>
+                                        <a href="{% url 'Register' %}"  class="primary-color">Sign Up</a>
                                     </span>
                                 </div>
 

@@ -10,27 +10,55 @@
       rel="stylesheet">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="{% static 'fonts/icomoon/style.css'%}">
+    <link rel="stylesheet" href="{% static '/fonts/icomoon/style.css'%}">
     <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css'%}">
     <!-- Bootstrap CSS -->
     <!-- CSS only -->
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static '/css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <!-- Style -->
     <link rel="stylesheet" href="{% static '/css/style.css'%}">
 </head>
 <body>
+    {% if user.is_authenticated %}
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light border-bottom px-5">
+            <a class="navbar-brand" href="/">
+                <img src="{% static '/images/logo.png'%}" alt="" width="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <div class="p-2"><b>{{request.user}}</b></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary btn-sm text-uppercase text-white" href="{% url 'Logout'%}">
+                            Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    {% endif %}
     {% if messages %}
         {% for message in messages %}
-        <div{% if message.tags %} class="alert alert-{{ message.tags }}"{% endif %} role="alert">
+        <div{% if message.tags %} class="alert alert-{{ message.tags }} alert-dismissible fade show"{% endif %} role="alert">
            {{ message }}
         </div>
         {% endfor %}
     {% endif %}
     {% block content %}
     {% endblock content %}
-    <script src="{% static 'js/jquery-3.3.1.min.js'%}"></script>
-    <script src="{% static 'js/popper.min.js'%}"></script>
-    <script src="{% static 'js/bootstrap.min.js'%}"></script>
-    <script src="{% static 'js/main.js'%}"></script>
+    <script src="{% static '/js/jquery-3.3.1.min.js'%}"></script>
+    <script src="{% static '/js/popper.min.js'%}"></script>
+    <script src="{% static '/js/bootstrap.min.js'%}"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="{% static '/js/main.js'%}"></script>
+    {% block script %}
+    {% endblock script%}
 </body>
 </html>

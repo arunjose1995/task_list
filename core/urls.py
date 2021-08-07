@@ -15,11 +15,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from .views import HomeView
+from .views import HomeView, ToDoView, add_todo, edit_todo, update_todo, delete_todo, search_tasks
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('auth/', include('authentication.urls')),
     path('', HomeView.as_view(), name='Home'),
+    path('todo-view/', ToDoView.as_view(), name='ToDo'),
+    path('add-todo/', add_todo, name='Add-ToDo'),
+    path('edit-todo/<int:id>', edit_todo, name='Edit-ToDo'),
+    path('update-todo/<int:id>', update_todo, name='Update-ToDo'),
+    path('delete-todo/<int:id>', delete_todo, name='Delete-ToDo'),
+    path('search-task/', search_tasks, name='Search'),
 ]
-
